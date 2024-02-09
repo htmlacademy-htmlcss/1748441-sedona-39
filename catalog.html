@@ -6,9 +6,9 @@
 	</head>
 	<body>
         <header class="page-header" data-test="header">
-			<p class="logo">
+			<a href="index.html" class="logo">
 				<img src="#" alt="Логотип компании Седона">
-			</p>
+            </a>
 			<nav class="navigation">
 				<ul class="navigation-list">
 					<li class="navigation-list">
@@ -24,7 +24,7 @@
 							<span class="visually-hidden">Поиск</span>
 						</a>
 						<a class="navigation-link" href="#">
-							<span class="visually-hidden">Избранное</span>
+							<span class="visually-hidden">В избранном</span>
 							<span class="count-fav">12</span>
 						</a>
 						<a class="navigation-link btn" href="#">Хочу сюда</a>
@@ -34,7 +34,7 @@
 		</header>
 
 		<main class="main-inner"  data-test="main">
-            <header class="inner-header">
+            <div class="inner-header">
                 <h1 class="inner-header-title">Гостиницы Седоны</h1>
                 <ul class="breadcrumbs">
                     <li class="breadcrumbs-item">
@@ -44,7 +44,7 @@
                         <a class="breadcrumbs-link">Каталог</a>
                     </li>
                 </ul>
-            </header>
+            </div>
 
             <section class="filter" data-test="filter">
                 <h2 class="visually-hidden">Фильтр гостинниц</h2>
@@ -104,7 +104,7 @@
                     </fieldset>
 
                     <button class="btn btn-filter" type="submit">Применить</button>
-                    <a class="reject">Сбросить</a>
+                    <button class="btn reset" type="reset" >Сбросить</button>
                 </form>
             </section>
 
@@ -116,44 +116,85 @@
                     <option value="popular">Популярные</option>
                 </select>
 
-                <a href="#" class="btn plate"><span class="visually-hidden">Плиткой</span></a>
-                <a href="#" class="btn plate-list"><span class="visually-hidden">Плитка текст</span></a>
-                <a href="#" class="btn list"><span class="visually-hidden">Список</span></a>
+                <a href="#" class="btn plate"><span class="visually-hidden">Отображение карточками</span></a>
+                <a href="#" class="btn plate-list"><span class="visually-hidden">Отображение расширенными карточками</span></a>
+                <a href="#" class="btn list"><span class="visually-hidden">Отображение списоком</span></a>
 
 
                 <ul class="product-list">
+
                     <li class="product-card">
-                        <img  class="product-card-image" src="#" alt="Гостиница">
-                        <h3 class="product-card-title">Amara Resort & Spa</h3>
+                        <a class="product-link-image" tabindex="-1" href="#">
+                            <img class="product-card-image" src="#" alt="Гостиница Amara Resort & Spa">
+                        </a>
+                        <a class="product-link-title" tabindex="-1" href="#">
+                            <h3 class="product-card-title">Amara Resort & Spa</h3>
+                        </a>
                         <p>Гостиница</p>
                         <b class="product-card-price">От 4000 ₽</b>
-                        <a class="product-link" href="">Подробнее</a>
-                        <a class="product-link-fav" href="">В избранное</a>
+                        <a class="product-link" href="#">Подробнее</a>
+                        <a class="product-link-fav" href="#">В избранное</a>
+                        <div class="stars">
+                            <p class="star-rating">4</p>
+                            <span class="visually-hidden">Отель 4 звезды</span>
+                        </div>
+                        <p class="card-rating">Рейтинг: 8,5</p>
                     </li>
+
                     <li class="product-card">
-                        <img class="product-card-image" src="#" alt="Гостиница">
-                        <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                        <a class="product-link-image" tabindex="-1" href="#">
+                            <img class="product-card-image" src="#" alt="Гостиница Villas at Poco Diablo">
+                        </a>
+                        <a class="product-link-title" tabindex="-1" href="#">
+                            <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                        </a>
                         <p>Гостиница</p>
                         <b class="product-card-price">От 5000 ₽</b>
-                        <a class="product-link" href="">Подробнее</a>
-                        <a class="product-link-fav" href="">В избранное</a>
+                        <a class="product-link" href="#">Подробнее</a>
+                        <a class="product-link-fav" href="#">В избранное</a>
+                        <div class="stars">
+                            <p class="star-rating">4</p>
+                            <span class="visually-hidden">Отель 4 звезды</span>
+                        </div>
+                        <p class="card-rating">Рейтинг: 9,2</p>
                     </li>
+
                     <li class="product-card">
-                        <img class="product-card-image" src="#" alt="Гостиница">
-                        <h3 class="product-card-title">Desert Quail Inn</h3>
+                        <a class="product-link-image" tabindex="-1" href="#">
+                            <img class="product-card-image" src="#" alt="Гостиница Desert Quail Inn">
+                        </a>
+                        <a class="product-link-title" tabindex="-1" href="#">
+                            <h3 class="product-card-title">Desert Quail Inn</h3>
+                        </a>
                         <p>Гостиница</p>
                         <b class="product-card-price">От 2500 ₽</b>
-                        <a class="product-link" href="">Подробнее</a>
-                        <a class="product-link-fav" href="">В избранное</a>
+                        <a class="product-link" href="#">Подробнее</a>
+                        <a class="product-link-fav" href="#">В избранное</a>
+                        <div class="stars">
+                            <p class="star-rating">3</p>
+                            <span class="visually-hidden">Отель 3 звезды</span>
+                        </div>
+                        <p class="card-rating">Рейтинг: 6,9</p>
                     </li>
+
                     <li class="product-card">
-                        <img class="product-card-image" src="#" alt="Гостиница">
-                        <h3 class="product-card-title">GreenTree Inn</h3>
+                        <a class="product-link-image" tabindex="-1" href="#">
+                            <img class="product-card-image" src="#" alt="Гостиница GreenTree Inn">
+                        </a>
+                        <a class="product-link-title" tabindex="-1" href="#">
+                            <h3 class="product-card-title">GreenTree Inn</h3>
+                        </a>
                         <p>Гостиница</p>
-                        <b>От 1500 ₽</b>
-                        <a class="product-link" href="">Подробнее</a>
-                        <a class="product-link-fav" href="">В избранное</a>
+                        <b class="product-card-price">От 1500 ₽</b>
+                        <a class="product-link" href="#">Подробнее</a>
+                        <a class="product-link-fav" href="#">В избранное</a>
+                        <div class="stars">
+                            <p class="star-rating">2</p>
+                            <span class="visually-hidden">Отель 2 звезды</span>
+                        </div>
+                        <p class="card-rating">Рейтинг: 5,0</p>
                     </li>
+
                 </ul>
 
                 <ul class="pagination">
@@ -203,7 +244,7 @@
 				</li>
 			</ul>
 			<a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-			<a class="footer-dev" href="https://htmlacademy.ru/" target="_blank"><img src="logo_company.png" alt="Логотип компании разработчика"></a>
+			<a class="footer-dev" href="https://htmlacademy.ru/" target="_blank"><img src="logo_company.png" alt="Логотип компании HTML академия"></a>
 		</footer>
 	</body>
 </html>
