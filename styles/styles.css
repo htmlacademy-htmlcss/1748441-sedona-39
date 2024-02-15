@@ -20,11 +20,22 @@ body{
     font-size: 18px;
     line-height: 21px;
 
-    background-color: #FFFFFF;
+    background-color: #F2F2F2;
     color: #333333;
 }
 
+.page-header{
+    background-color: #FFFFFF;
+}
+.main-index{
+    background-color: #FFFFFF;
+}
+.page-footer{
+    background-color: #FFFFFF;
+}
+
 .btn{
+    font-family: inherit;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -33,6 +44,11 @@ body{
     text-decoration: none;
     border: none;
 }
+
+.control-input, .select{
+    font-family: inherit;
+}
+
 
 .btn-basic{
     background-color: #756157;
@@ -76,6 +92,7 @@ body{
 
 .navigation-list{
     list-style: none;
+    margin: 0;
 }
 
 .navigation-link{
@@ -87,7 +104,7 @@ body{
 
 .promo{
     background-image: url(../images/promo.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat:no-repeat;
     background-color: #7DB54F;
     color:#000000;
@@ -154,7 +171,7 @@ body{
 .subscribe{
     text-align: center;
     background-image: url(../images/subscribe.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat:no-repeat;
     background-color: #7DB54F;
     color:#000000;
@@ -172,7 +189,9 @@ body{
     line-height: 26px;
 }
 
-
+.social-list{
+    margin: 0;
+}
 .social-item {
     list-style: none;
 }
@@ -204,7 +223,7 @@ body{
 
 .inner-header{
     background-image: url(../images/filter-bg.jpg);
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat:no-repeat;
     color: #FFFFFF;
     background-color: #7DB54F;
