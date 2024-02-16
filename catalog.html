@@ -105,10 +105,10 @@
 						<fieldset class="catalog-filter-group">
 							<legend class="catalog-filter-title">Стоимость:</legend>
 							<label class="control">
-								<input type="number" class="control-input" name="price_from" placeholder="0">От
+								<input type="number" class="control-input price-filter" name="price_from" placeholder="0">От
 							</label>
 							<label class="control">
-								<input type="number" class="control-input" name="price_to" placeholder="9000">До
+								<input type="number" class="control-input price-filter" name="price_to" placeholder="9000">До
 							</label>
 						</fieldset>
 
@@ -143,7 +143,7 @@
 						<a class="hotel-link-title" tabindex="-1" href="#">
 							<h3 class="hotel-card-title">Amara Resort & Spa</h3>
 						</a>
-						<p>Гостиница</p>
+						<p class="type-hotel">Гостиница</p>
 						<p class="hotel-card-price">От 4000 ₽</p>
 						<a class="btn btn-basic" href="#">Подробнее</a>
 						<a class="btn btn-second" href="#">В избранное</a>
@@ -160,10 +160,10 @@
 						<a class="hotel-link-title" tabindex="-1" href="#">
 							<h3 class="hotel-card-title">Villas at Poco Diablo</h3>
 						</a>
-						<p>Гостиница</p>
+						<p class="type-hotel">Гостиница</p>
 						<p class="hotel-card-price">От 5000 ₽</p>
 						<a class="btn btn-basic" href="#">Подробнее</a>
-						<a class="btn btn-second" href="#">В избранное</a>
+						<a class="btn btn-select" href="#">В избранном</a>
 						<p class="stars">
 							<span class="visually-hidden">Отель 4 звезды</span>
 						</p>
@@ -177,7 +177,7 @@
 						<a class="hotel-link-title" tabindex="-1" href="#">
 							<h3 class="hotel-card-title">Desert Quail Inn</h3>
 						</a>
-						<p>Гостиница</p>
+						<p class="type-hotel">Гостиница</p>
 						<p class="hotel-card-price">От 2500 ₽</p>
 						<a class="btn btn-basic" href="#">Подробнее</a>
 						<a class="btn btn-second" href="#">В избранное</a>
@@ -194,7 +194,7 @@
 						<a class="hotel-link-title" tabindex="-1" href="#">
 							<h3 class="hotel-card-title">GreenTree Inn</h3>
 						</a>
-						<p>Гостиница</p>
+						<p class="type-hotel">Гостиница</p>
 						<p class="hotel-card-price">От 1500 ₽</p>
 						<a class="btn btn-basic" href="#">Подробнее</a>
 						<a class="btn btn-second" href="#">В избранное</a>
@@ -207,8 +207,8 @@
 				</ul>
 
 				<ul class="pagination">
-					<li class="pagination-item first-page current">
-						<a class="pagination-link" href="#">1</a>
+					<li class="pagination-item first-page">
+						<a class="pagination-link current" href="#">1</a>
 					</li>
 					<li class="pagination-item">
 						<a class="pagination-link" href="#">2</a>
@@ -236,7 +236,7 @@
 						<input class="control-input" type="email" name="email" placeholder="Ваш e-mail">
 						<span class="visually-hidden">Ваш e-mail</span>
 					</label>
-					<button class="btn btn-second" type="submit">Подписаться</button>
+					<button class="btn btn-second btn-big" type="submit">Подписаться</button>
 				</form>
 			</section>
 		</main>
