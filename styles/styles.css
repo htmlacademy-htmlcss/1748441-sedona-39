@@ -31,6 +31,10 @@ body{
 .main-container{
     flex-grow: 1;
 }
+.container{
+    width: 1060px;
+    margin: 0 auto;
+}
 
 .wrapper{
     width: 1200px;
@@ -101,6 +105,9 @@ body{
     line-height: 36px;
     font-weight: 700;
 }
+.btn-card{
+    padding: 8px 20px;
+}
 
 .title-section{
     font-size: 30px;
@@ -158,6 +165,8 @@ body{
 .advantage-list{
     list-style: none;
     background-color: #82B3D3;
+    padding: 0;
+    margin: 0;
 }
 
 .advantage-title{
@@ -271,6 +280,7 @@ body{
     background-repeat:no-repeat;
     color: #FFFFFF;
     background-color: #9cd8ff;
+    margin-bottom: 50px;
 }
 
 .inner-header-title{
@@ -278,6 +288,7 @@ body{
     line-height: 78px;
     font-weight: 700;
     margin: 0;
+    margin-bottom: 8px;
 }
 .breadcrumbs-item{
     list-style: none;
@@ -420,13 +431,15 @@ label.control{
     margin: 0;
     margin-bottom: 90px;
 }
-.advantage-list{
-    display: block;
-}
 
-.advantage-row{
+.advantage-item-big{
     display: flex;
 }
+.advantage-item-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 
 .about-title-section{
     width: 505px;
@@ -449,6 +462,8 @@ label.control{
 .about-description{
     margin: 0;
     margin-bottom: 81px;
+    padding-left: 85px;
+    padding-right: 85px;
 }
 
 .lead{
@@ -486,6 +501,51 @@ label.control{
 .filter-list{
     display: flex;
 }
+.breadcrumbs{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-bottom: 40px;
+}
 .pagination{
     display: flex;
+}
+.catalog-filter-group{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.catalog-filter-list{
+    padding: 0;
+    margin: 0;
+}
+.catalog-filter-item{
+    list-style-type: none;
+}
+
+.active-catalog{
+    display: flex;
+    margin-bottom: 40px;
+}
+.hotel-list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hotel-card{
+    width: 340px;
+}
+.hotel-card-image{
+    margin-bottom: 16px;
+}
+.hotel-card-title{
+    margin: 0;
+}
+.hotel-card-title{
+    margin-bottom: 16px;
+}
+.hotel-info{
+    display: flex;
+    justify-content: space-between;
 }
