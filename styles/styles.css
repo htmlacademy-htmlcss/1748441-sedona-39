@@ -13,7 +13,9 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
-
+html{
+    height: 100%;
+}
 body{
     font-family: "PT Sans", "Arial", sans-serif;
 
@@ -23,12 +25,20 @@ body{
     background-color: #F2F2F2;
     color: #333333;
     margin: 0;
+    height: 100%;
+}
+
+.main-container{
+    flex-grow: 1;
 }
 
 .wrapper{
     width: 1200px;
     margin: 0 auto;
     box-shadow: 0 0 15px 0 #00000033;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .page-header{
@@ -50,6 +60,8 @@ body{
     text-align: center;
     text-decoration: none;
     border: none;
+    border-radius: 5px;
+    padding: 8px 50px;
 }
 
 .control-input, .select{
@@ -96,10 +108,10 @@ body{
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .visually-hidden{
-    /* display: none; */
     position: fixed;
     transform: scale(0);
 }
@@ -129,6 +141,9 @@ body{
     background-repeat:no-repeat;
     background-color: #9cd8ff;
     color:#000000;
+    padding-top: 51px;
+    padding-bottom: 25px;
+    margin-bottom: 69px;
 }
 
 .advantage{
@@ -160,19 +175,10 @@ body{
 .advantage-item-big, .advantage-item-big p{
     color: #FFFFFF;
 }
-/*
-.square{
-    background-color: #83B3D3;
-}
-.road{
-    background-color: #83B3D3;
-}
-.tourist{
-    background-color: #83B3D3;
-}
-*/
+
 .about{
     text-align: center;
+    margin-bottom: 96px;
 }
 .about-text{
     font-size: 22px;
@@ -342,4 +348,144 @@ label.control{
 .pagination-link-dot{
     background-color: #FFFFFF;
     color: #000000;
+}
+
+.page-header{
+    display: flex;
+}
+.navigation{
+    display: flex;
+}
+.navigation-list{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+.navigation-item{
+    margin: 0 16px;
+}
+.navigation-item-user{
+    margin: 0 12px;
+}
+.navigation-btn{
+    margin: 0;
+    margin-left: 20px;
+}
+.navigation-user{
+    margin-left: auto;
+    margin-right: 70px;
+}
+.navigation-search-icon{
+    background-image: url(../images/loupe.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+}
+.navigation-favorite-icon{
+    background-image: url(../images/heard.svg);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 19px;
+}
+.count-favorite{
+    font-size: 10px;
+    line-height: 10px;
+    color:#FFFFFF;
+    background-color: #7DB54F;
+    border-radius: 50%;
+}
+
+.logo{
+    margin-left: 70px;
+    margin-right: 28px;
+}
+
+.promo-img{
+    display: block;
+    margin: 0 auto;
+}
+.advantage{
+    margin-bottom: 64px;
+}
+.advantage-img{
+    vertical-align: middle;
+}
+.advantage-section{
+    width: 620px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.advantage-description{
+    margin: 0;
+    margin-bottom: 90px;
+}
+.advantage-list{
+    display: block;
+}
+
+.advantage-row{
+    display: flex;
+}
+
+.about-title-section{
+    width: 505px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.about-text{
+    margin: 0;
+    margin-bottom: 64px;
+}
+.about-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.about-title{
+    margin: 0;
+    margin-bottom: 30px;
+}
+.about-description{
+    margin: 0;
+    margin-bottom: 81px;
+}
+
+.lead{
+    margin-bottom: 96px;
+}
+.lead-title{
+    margin-bottom: 20px;
+}
+.lead-text{
+    width: 592px;
+    margin: 0 auto;
+    margin-bottom: 54px;
+}
+
+.subscribe-title{
+    padding-top: 96px;
+    margin-bottom: 20px;
+}
+.subscribe-text{
+    margin: 0 auto;
+    margin-bottom: 54px;
+    width: 475px;
+}
+.subscribe-form{
+    padding-bottom: 104px;
+}
+.footer-contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.dev-company{
+    margin-right: 71px;
+}
+
+.filter-list{
+    display: flex;
+}
+.pagination{
+    display: flex;
 }
