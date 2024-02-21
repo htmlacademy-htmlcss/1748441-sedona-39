@@ -159,11 +159,6 @@ body{
 	margin-left: 20px;
 }
 
-.navigation-user{
-	margin-left: auto;
-	margin-right: 70px;
-}
-
 .navigation-search-icon{
 	background-image: url(../images/loupe.svg);
 	background-repeat: no-repeat;
@@ -191,6 +186,11 @@ body{
 	color: #000000;
 	text-decoration: none;
 	text-align: center;
+}
+
+.navigation-user{
+	margin-left: auto;
+	margin-right: 70px;
 }
 
 .promo{
@@ -423,10 +423,25 @@ body{
 }
 
 .phone-footer{
-	color: #000000;
-	text-decoration: none;
-	font-size: 40px;
-	line-height: 40px;
+	width: 720px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-contacts{
+	display: flex;
+	justify-content: space-between;
+}
+
+.dev-company{
+	margin-right: 71px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .inner-header{
@@ -461,6 +476,10 @@ body{
 	color: #FFFFFF;
 	font-size: 16px;
 	line-height: 21px;
+}
+
+.filter{
+    padding-bottom: 70px;
 }
 
 .catalog-filter-title{
@@ -573,6 +592,9 @@ label.control{
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E6E6E6;
+    margin-bottom: 40px;
 }
 
 .hotel-card:last-child{
@@ -601,10 +623,14 @@ label.control{
 
 .pagination{
 	display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
 }
 
 .pagination-item{
 	list-style: none;
+    margin-right: 8px;
 }
 
 .pagination-link{
@@ -614,6 +640,22 @@ label.control{
 	background-color: #82B3D3;
 	color: #FFFFFF;
 	text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.pagination-link-dot{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: 8px;
+}
+
+.pagination-item:last-child{
+    margin-right: 0;
 }
 
 .pagination-link.current{
@@ -624,12 +666,4 @@ label.control{
 .pagination-link-dot{
 	background-color: #FFFFFF;
 	color: #000000;
-}
-
-.footer-contacts{
-	display: flex;
-	justify-content: space-between;
-}
-.dev-company{
-	margin-right: 71px;
 }
