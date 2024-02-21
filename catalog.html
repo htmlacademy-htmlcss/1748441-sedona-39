@@ -8,7 +8,7 @@
 	<body>
 		<div class="wrapper">
 			<header class="page-header" data-test="header">
-				<nav class="navigation"></nav>
+				<nav class="navigation">
 					<a href="index.html" aria-current="page" class="logo">
 						<img src="images/logo.svg" width="140" height="70" alt="Логотип компании Седона, мост и горы обрамленные в перевернутый треугольник">
 					</a>
@@ -41,7 +41,6 @@
 							<a class="btn btn-basic" href="#">Хочу сюда</a>
 						</li>
 					</ul>
-
 				</nav>
 			</header>
 
@@ -131,17 +130,20 @@
 					<div class="container">
 						<div class="active-catalog">
 							<h2 class="title-section">Найдено гостиниц: <span>38</span></h2>
-							<select class="select sort-product" aria-label="Сортировка">
-								<option value="cheap">Сначала дешевые</option>
-								<option value="expensive">Сначала дорогие</option>
-								<option value="popular">Популярные</option>
-							</select>
+							<div class="sort-block">
+								<select class="select sort-product" aria-label="Сортировка">
+									<option value="cheap">Сначала дешевые</option>
+									<option value="expensive">Сначала дорогие</option>
+									<option value="popular">Популярные</option>
+								</select>
 
-							<div class="catalog-view">
-								<a href="#" class="btn plate view-selected"><span class="visually-hidden">Отображение карточками</span></a>
-								<a href="#" class="btn plate-list"><span class="visually-hidden">Отображение расширенными карточками</span></a>
-								<a href="#" class="btn list"><span class="visually-hidden">Отображение списком</span></a>
+								<div class="catalog-view">
+									<a href="#" class="plate view-selected"><span class="visually-hidden">Отображение карточками</span></a>
+									<a href="#" class="plate-list"><span class="visually-hidden">Отображение расширенными карточками</span></a>
+									<a href="#" class="list"><span class="visually-hidden">Отображение списком</span></a>
+								</div>
 							</div>
+
 						</div>
 
 						<ul class="hotel-list">
@@ -157,12 +159,16 @@
 									<p class="type-hotel">Гостиница</p>
 									<p class="hotel-card-price">От 4000 ₽</p>
 								</div>
-								<a class="btn btn-basic btn-card" href="#">Подробнее</a>
-								<a class="btn btn-second btn-card" href="#">В избранное</a>
-								<p class="stars">
-									<span class="visually-hidden">Отель 4 звезды</span>
-								</p>
-								<p class="hotel-rating">Рейтинг: 8,5</p>
+								<div class="hotel-action">
+									<a class="btn btn-basic btn-card" href="#">Подробнее</a>
+									<a class="btn btn-second btn-card" href="#">В избранное</a>
+								</div>
+								<div class="hotel-footer">
+									<p class="stars">
+										<span class="visually-hidden">Отель 4 звезды</span>
+									</p>
+									<p class="hotel-rating">Рейтинг: 8,5</p>
+								</div>
 							</li>
 
 							<li class="hotel-card">
@@ -176,12 +182,16 @@
 									<p class="type-hotel">Гостиница</p>
 									<p class="hotel-card-price">От 5000 ₽</p>
 								</div>
-								<a class="btn btn-basic btn-card" href="#">Подробнее</a>
-								<a class="btn btn-select btn-card" href="#">В избранном</a>
-								<p class="stars">
-									<span class="visually-hidden">Отель 4 звезды</span>
-								</p>
-								<p class="hotel-rating">Рейтинг: 9,2</p>
+								<div class="hotel-action">
+									<a class="btn btn-basic btn-card" href="#">Подробнее</a>
+									<a class="btn btn-select btn-card" href="#">В избранном</a>
+								</div>
+								<div class="hotel-footer">
+									<p class="stars">
+										<span class="visually-hidden">Отель 4 звезды</span>
+									</p>
+									<p class="hotel-rating">Рейтинг: 9,2</p>
+								</div>
 							</li>
 
 							<li class="hotel-card">
@@ -195,13 +205,16 @@
 									<p class="type-hotel">Гостиница</p>
 									<p class="hotel-card-price">От 2500 ₽</p>
 								</div>
-								<a class="btn btn-basic btn-card" href="#">Подробнее</a>
-								<a class="btn btn-second btn-card" href="#">В избранное</a>
-
-								<p class="stars">
-									<span class="visually-hidden">Отель 3 звезды</span>
-								</p>
-								<p class="hotel-rating">Рейтинг: 6,9</p>
+								<div class="hotel-action">
+									<a class="btn btn-basic btn-card" href="#">Подробнее</a>
+									<a class="btn btn-second btn-card" href="#">В избранное</a>
+								</div>
+								<div class="hotel-footer">
+									<p class="stars">
+										<span class="visually-hidden">Отель 3 звезды</span>
+									</p>
+									<p class="hotel-rating">Рейтинг: 6,9</p>
+								</div>
 							</li>
 
 							<li class="hotel-card">
@@ -215,12 +228,39 @@
 									<p class="type-hotel">Гостиница</p>
 									<p class="hotel-card-price">От 1500 ₽</p>
 								</div>
-								<a class="btn btn-basic btn-card" href="#">Подробнее</a>
-								<a class="btn btn-second btn-card" href="#">В избранное</a>
-								<p class="stars">
-									<span class="visually-hidden">Отель 2 звезды</span>
-								</p>
-								<p class="hotel-rating">Рейтинг: 5,0</p>
+								<div class="hotel-action">
+									<a class="btn btn-basic btn-card" href="#">Подробнее</a>
+									<a class="btn btn-second btn-card" href="#">В избранное</a>
+								</div>
+								<div class="hotel-footer">
+									<p class="stars">
+										<span class="visually-hidden">Отель 2 звезды</span>
+									</p>
+									<p class="hotel-rating">Рейтинг: 5,0</p>
+								</div>
+							</li>
+
+							<li class="hotel-card">
+								<a class="hotel-link-image" tabindex="-1" href="#">
+									<img class="hotel-card-image" src="images/hotels/hotel-4.jpg" width="300" height="212" alt="Горный хребет на фоне звездного неба">
+								</a>
+								<a class="hotel-link-title" tabindex="-1" href="#">
+									<h3 class="hotel-card-title">GreenTree Inn</h3>
+								</a>
+								<div class="hotel-info">
+									<p class="type-hotel">Гостиница</p>
+									<p class="hotel-card-price">От 1500 ₽</p>
+								</div>
+								<div class="hotel-action">
+									<a class="btn btn-basic btn-card" href="#">Подробнее</a>
+									<a class="btn btn-second btn-card" href="#">В избранное</a>
+								</div>
+								<div class="hotel-footer">
+									<p class="stars">
+										<span class="visually-hidden">Отель 2 звезды</span>
+									</p>
+									<p class="hotel-rating">Рейтинг: 5,0</p>
+								</div>
 							</li>
 
 						</ul>
