@@ -15,13 +15,13 @@
 
 					<ul class="navigation-list">
 						<li class="navigation-item">
-							<a class="navigation-link active" aria-current="page" href="index.html">Главная</a>
+							<a class="navigation-link" href="index.html">Главная</a>
 						</li>
 						<li class="navigation-item">
 							<a class="navigation-link" href="#">О Седоне</a>
 						</li>
 						<li class="navigation-item">
-							<a class="navigation-link" href="catalog.html">Гостиницы</a>
+							<a class="navigation-link active" aria-current="page" href="catalog.html">Гостиницы</a>
 						</li>
 					</ul>
 
@@ -62,7 +62,7 @@
 							<h2 class="visually-hidden">Фильтр гостиниц</h2>
 							<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 								<div class="filter-list">
-									<fieldset class="catalog-filter-group">
+									<fieldset class="catalog-filter-group catalog-filter-item">
 										<legend class="catalog-filter-title">Инфраструктура:</legend>
 										<ul class="catalog-filter-list">
 											<li class="catalog-filter-item">
@@ -84,7 +84,7 @@
 
 									</fieldset>
 
-									<fieldset class="catalog-filter-group">
+									<fieldset class="catalog-filter-group catalog-filter-item">
 										<legend class="catalog-filter-title">Тип жилья:</legend>
 										<ul class="catalog-filter-list">
 											<li class="catalog-filter-item">
@@ -106,7 +106,7 @@
 
 									</fieldset>
 
-									<fieldset class="catalog-filter-group">
+									<fieldset class="catalog-filter-group catalog-filter-price">
 										<legend class="catalog-filter-title">Стоимость:</legend>
 										<label class="control">
 											<input type="number" class="control-input price-filter" name="price_from" placeholder="0">От
@@ -290,7 +290,7 @@
 
 			</main>
 			<footer class="page-footer"  data-test="footer">
-				<section class="subscribe"  data-test="subscribe">
+				<section class="subscribe subscribe-light"  data-test="subscribe">
 					<h2 class="title-section subscribe-title">Подпишитесь на рассылку</h2>
 					<p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 					<form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">

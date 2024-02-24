@@ -140,10 +140,12 @@ body{
 .logo{
 	margin-left: 70px;
 	margin-right: 28px;
+	z-index: 1;
 }
 
 .navigation{
 	display: flex;
+	height: 64px;
 }
 
 .navigation-item{
@@ -151,6 +153,7 @@ body{
 }
 
 .navigation-item-user{
+	display: block;
 	margin: 0 12px;
 }
 
@@ -175,17 +178,24 @@ body{
 
 .navigation-list{
 	list-style: none;
-	margin: 0;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+    align-items: center;
+    margin: 0;
 	padding: 0;
+    z-index: 1;
 }
 
 .navigation-link{
 	color: #000000;
 	text-decoration: none;
 	text-align: center;
+}
+.navigation-link.active{
+	text-decoration: underline;
+    text-decoration-color: #756257;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 23px;
 }
 
 .navigation-user{
@@ -194,7 +204,7 @@ body{
 }
 
 .promo{
-	background-image: url(../images/divider.png),url(../images/promo.jpg);
+	background-image: url(../images/divider.svg),url(../images/promo.jpg);
 	background-size: 100% auto, cover;
 	background-position: bottom, top;
 	background-repeat:no-repeat;
@@ -289,6 +299,7 @@ body{
 
 .advantage-item-big{
 	display: flex;
+	align-items: center;
 }
 
 .advantage-item-reverse{
@@ -367,6 +378,8 @@ body{
 
 .subscribe{
 	text-align: center;
+}
+.subscrib-picture{
 	background-image: url(../images/subscribe.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -394,6 +407,13 @@ body{
 
 .subscribe-form{
 	padding-bottom: 104px;
+}
+
+.subscribe-light > .subscribe-title{
+	color: #000000;
+}
+.subscribe-light > .subscribe-text{
+	color:#333333;
 }
 
 .social-list{
@@ -459,6 +479,7 @@ body{
 	font-weight: 700;
 	margin: 0;
 	margin-bottom: 8px;
+	padding-top: 35px;
 }
 
 .breadcrumbs{
@@ -488,15 +509,26 @@ body{
 	font-weight: 700;
 }
 
+.catalog-filter-item{
+	min-width: 151px;
+	max-width: 170px;
+}
+
 .catalog-filter-group{
 	border: none;
 	padding: 0;
 	margin: 0;
+
 }
 
 .catalog-filter-list{
 	padding: 0;
 	margin: 0;
+}
+
+.catalog-filter-price{
+	margin-left: auto;
+	display: flex;
 }
 
 .catalog-filter-item{
@@ -505,6 +537,9 @@ body{
 
 .price-filter{
 	font-weight: 700;
+}
+.price-filter{
+	width: 143px;
 }
 
 label.control{
@@ -515,6 +550,10 @@ label.control{
 
 .filter-list{
 	display: flex;
+    gap: 70px;
+}
+.filter-control{
+	width: 191px;
 }
 
 .active-catalog{
@@ -640,11 +679,15 @@ label.control{
 	background-color: #82B3D3;
 	color: #FFFFFF;
 	text-decoration: none;
-    width: 60px;
-    height: 60px;
     display: block;
     border-radius: 4px;
     text-align: center;
+	min-width: 60px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+	white-space: nowrap;
 }
 
 .pagination-link-dot{
