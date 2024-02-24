@@ -693,6 +693,10 @@ label.control{
 	height: 60px;
 	display: block;
 	margin-right: 8px;
+	text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    white-space: nowrap;
 }
 
 .pagination-item:last-child{
