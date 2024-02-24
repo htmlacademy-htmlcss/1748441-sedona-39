@@ -180,10 +180,10 @@ body{
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-    align-items: center;
-    margin: 0;
+	align-items: center;
+	margin: 0;
 	padding: 0;
-    z-index: 1;
+	z-index: 1;
 }
 
 .navigation-link{
@@ -193,9 +193,9 @@ body{
 }
 .navigation-link.active{
 	text-decoration: underline;
-    text-decoration-color: #756257;
-    text-decoration-thickness: 2px;
-    text-underline-offset: 23px;
+	text-decoration-color: #756257;
+	text-decoration-thickness: 2px;
+	text-underline-offset: 23px;
 }
 
 .navigation-user{
@@ -444,13 +444,13 @@ body{
 
 .phone-footer{
 	width: 720px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 30px;
+	color: #000000;
+	text-decoration: none;
+	font-size: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .footer-contacts{
@@ -460,8 +460,8 @@ body{
 
 .dev-company{
 	margin-right: 71px;
-    margin-top: auto;
-    margin-bottom: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .inner-header{
@@ -500,7 +500,7 @@ body{
 }
 
 .filter{
-    padding-bottom: 70px;
+	padding-bottom: 70px;
 }
 
 .catalog-filter-title{
@@ -550,7 +550,7 @@ label.control{
 
 .filter-list{
 	display: flex;
-    gap: 70px;
+	gap: 70px;
 }
 .filter-control{
 	width: 191px;
@@ -631,9 +631,9 @@ label.control{
 	flex-wrap: wrap;
 	justify-content: flex-start;
 	gap: 20px;
-    padding-bottom: 40px;
-    border-bottom: 1px solid #E6E6E6;
-    margin-bottom: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #E6E6E6;
+	margin-bottom: 40px;
 }
 
 .hotel-card:last-child{
@@ -662,14 +662,14 @@ label.control{
 
 .pagination{
 	display: flex;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 60px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px;
 }
 
 .pagination-item{
 	list-style: none;
-    margin-right: 8px;
+	margin-right: 8px;
 	min-width: 60px;
 }
 
@@ -680,25 +680,23 @@ label.control{
 	background-color: #82B3D3;
 	color: #FFFFFF;
 	text-decoration: none;
-    display: block;
-    border-radius: 4px;
-    text-align: center;
+	display: block;
+	border-radius: 4px;
+	text-align: center;
 	padding-top: 12px;
 	padding-bottom: 12px;
-	padding-left: 5px;
-	padding-right: 5px;
 	white-space: nowrap;
 }
 
 .pagination-link-dot{
-    width: 60px;
-    height: 60px;
-    display: block;
-    margin-right: 8px;
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin-right: 8px;
 }
 
 .pagination-item:last-child{
-    margin-right: 0;
+	margin-right: 0;
 }
 
 .pagination-link.current{
