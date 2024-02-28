@@ -136,7 +136,19 @@ body{
 	position: fixed;
 	transform: scale(0);
 }
-
+/* visually-hidden v2 */
+/*
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+*/
 .logo{
 	margin-left: 70px;
 	margin-right: 28px;
@@ -180,10 +192,11 @@ body{
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
 	margin: 0;
 	padding: 0;
 	z-index: 1;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .navigation-link{
@@ -251,7 +264,6 @@ body{
 }
 
 .advantage-card{
-	padding: 112px 25px;
 	max-width: 400px;
 	box-sizing: border-box;
 	background-color: rgba(131, 179, 211, 0.2);
@@ -279,6 +291,7 @@ body{
 
 .advantage-item-big{
 	display: flex;
+	width: 100%;
 }
 
 .advantage-item-big, .advantage-item-big p{
@@ -297,14 +310,13 @@ body{
 	margin-bottom: 25px;
 }
 
-.advantage-item-big{
-	display: flex;
-	align-items: center;
-}
-
 .advantage-item-reverse{
 	display: flex;
 	flex-direction: row-reverse;
+}
+
+.advantage-wrap{
+    padding: 102px 82px;
 }
 
 .about{
@@ -322,15 +334,13 @@ body{
 
 .about-item{
 	list-style: none;
+    padding: 81px 60px;
 }
 
 .about-description{
 	font-size: 18px;
 	line-height: 21px;
 	margin: 0;
-	margin-bottom: 81px;
-	padding-left: 85px;
-	padding-right: 85px;
 }
 
 .about-item:nth-child(2n+1){
@@ -345,6 +355,45 @@ body{
 	color: #000000;
 	margin: 0;
 	margin-bottom: 30px;
+}
+
+.about-item-house::before{
+    content: '';
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-image: url(../images/home.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.about-item-food::before{
+    content: '';
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-image: url(../images/food.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.about-item-souvenirs::before{
+    content: '';
+    width: 75px;
+    height: 75px;
+    display: block;
+    background-image: url(../images/gift.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .about-title-section{
@@ -378,8 +427,10 @@ body{
 
 .subscribe{
 	text-align: center;
+    padding-top: 96px;
+    padding-bottom: 104px;
 }
-.subscrib-picture{
+.subscribe-picture{
 	background-image: url(../images/subscribe.jpg);
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -392,7 +443,6 @@ body{
 	line-height: 36px;
 	font-weight: 700;
 	color:#FFFFFF;
-	padding-top: 96px;
 	margin-bottom: 20px;
 }
 
@@ -403,10 +453,6 @@ body{
 	margin: 0 auto;
 	margin-bottom: 54px;
 	width: 475px;
-}
-
-.subscribe-form{
-	padding-bottom: 104px;
 }
 
 .subscribe-light > .subscribe-title{
@@ -662,6 +708,7 @@ label.control{
 
 .pagination{
 	display: flex;
+	gap: 8px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 60px;
@@ -669,8 +716,8 @@ label.control{
 
 .pagination-item{
 	list-style: none;
-	margin-right: 8px;
 	min-width: 60px;
+    height: 60px;
 }
 
 .pagination-link{
@@ -692,11 +739,10 @@ label.control{
 	width: 60px;
 	height: 60px;
 	display: block;
-	margin-right: 8px;
 	text-align: center;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    white-space: nowrap;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	white-space: nowrap;
 }
 
 .pagination-item:last-child{
