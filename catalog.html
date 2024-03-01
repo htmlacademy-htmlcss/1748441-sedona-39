@@ -108,12 +108,14 @@
 
 									<fieldset class="catalog-filter-group catalog-filter-price">
 										<legend class="catalog-filter-title">Стоимость:</legend>
-										<label class="control">
-											<input type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter" name="price_from" placeholder="0">От
-										</label>
-										<label class="control">
-											<input type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter" name="price_to" placeholder="9000">До
-										</label>
+										<div class="price-item">
+											<label for="price_from" class="control control-price">От</label>
+											<input id="price_from" type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter price-from" name="price_from" placeholder="0" value="0">
+										</div>
+										<div class="price-item">
+										   <label for="price-to" class="control control-price">До</label>
+											<input id="price-to" type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter price-to" name="price_to" placeholder="9000" value="9000">
+										</div>
 									</fieldset>
 									<div class="filter-control">
 										<button class="btn btn-second" type="submit">Применить</button>
