@@ -31,8 +31,8 @@
 								<span class="visually-hidden">Поиск</span>
 							</a>
 						</li>
-						<li class="navigation-item-user">
-							<a class="navigation-link navigation-favorite-icon" href="#">
+						<li class="navigation-item-user navigation-favorite-icon">
+							<a class="navigation-link favorite-link" href="#">
 								<span class="visually-hidden">Гостиниц в избранном</span>
 								<span class="count-favorite">12</span>
 							</a>
@@ -109,10 +109,10 @@
 									<fieldset class="catalog-filter-group catalog-filter-price">
 										<legend class="catalog-filter-title">Стоимость:</legend>
 										<label class="control">
-											<input type="number" class="control-input price-filter" name="price_from" placeholder="0">От
+											<input type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter" name="price_from" placeholder="0">От
 										</label>
 										<label class="control">
-											<input type="number" class="control-input price-filter" name="price_to" placeholder="9000">До
+											<input type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter" name="price_to" placeholder="9000">До
 										</label>
 									</fieldset>
 									<div class="filter-control">
@@ -138,9 +138,9 @@
 								</select>
 
 								<div class="catalog-view">
-									<a href="#" class="plate view-selected"><span class="visually-hidden">Отображение карточками</span></a>
-									<a href="#" class="plate-list"><span class="visually-hidden">Отображение расширенными карточками</span></a>
-									<a href="#" class="list"><span class="visually-hidden">Отображение списком</span></a>
+									<a href="#" class="catalog-view-link plate active"><span class="visually-hidden">Отображение карточками</span></a>
+									<a href="#" class="catalog-view-link plate-list"><span class="visually-hidden">Отображение расширенными карточками</span></a>
+									<a href="#" class="catalog-view-link list"><span class="visually-hidden">Отображение списком</span></a>
 								</div>
 							</div>
 
@@ -272,7 +272,7 @@
 					<p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 					<form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
 						<label class="subscribe-form-email">
-							<input class="control-input" type="email" name="email" placeholder="Ваш e-mail">
+							<input class="control-input subscribe-input" type="email" name="email" placeholder="Ваш e-mail">
 							<span class="visually-hidden">Ваш e-mail</span>
 						</label>
 						<button class="btn btn-second btn-big" type="submit">Подписаться</button>
@@ -281,18 +281,18 @@
 				<section class="footer-contacts">
 					<h2 class="visually-hidden">Контакты и социальные сети</h2>
 					<ul class="social-list">
-						<li class="social-item social-item-vk">
-							<a href="https://vk.com/htmlacademy">
+						<li class="social-item">
+							<a class="social-link social-item-vk" href="https://vk.com/htmlacademy">
 								<span class="visually-hidden">Вконтакте</span>
 							</a>
 						</li>
-						<li class="social-item social-item-tg">
-							<a href="https://t.me/htmlacademy">
+						<li class="social-item">
+							<a class="social-link social-item-tg" href="https://t.me/htmlacademy">
 								<span class="visually-hidden">Телеграмм</span>
 							</a>
 						</li>
-						<li class="social-item social-item-yt">
-							<a href="https://www.youtube.com/user/htmlacademyru">
+						<li class="social-item">
+							<a class="social-link social-item-yt" href="https://www.youtube.com/user/htmlacademyru">
 								<span class="visually-hidden">Youtube</span>
 							</a>
 						</li>
