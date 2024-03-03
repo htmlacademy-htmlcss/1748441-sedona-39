@@ -744,14 +744,18 @@ label.control{
 }
 .hotel-card{
 	list-style: none;
-	width: 340px;
-	box-sizing: border-box;
 	border: 1px solid #E6E6E6;
 	border-radius: 4px;
 	padding: 20px;
-	height: 100%;
+	display: flex;
+	flex-direction: column;
 }
-
+.card-footer{
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	margin-top: auto;
+}
 
 .type-hotel{
 	font-size: 18px;
@@ -795,9 +799,8 @@ label.control{
 .hotel-list{
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	display: grid;
+	grid-template-columns: repeat(3, 340px);
 	gap: 20px;
 	padding-bottom: 40px;
 	border-bottom: 1px solid #E6E6E6;
