@@ -66,17 +66,17 @@
 								<ul class="catalog-filter-list">
 									<li class="catalog-filter-item">
 										<label class="control">
-											<input type="checkbox" class="control-input" checked name="pool">Бассейн
+											<input type="checkbox" class="control-input" checked name="pool"><span>Бассейн</span>
 										</label>
 									</li>
 									<li class="catalog-filter-item">
 										<label class="control">
-											<input type="checkbox" class="control-input" checked name="parking">Парковка
+											<input type="checkbox" class="control-input" checked name="parking"><span>Парковка</span>
 										</label>
 									</li>
 									<li class="catalog-filter-item">
 										<label class="control">
-											<input type="checkbox" class="control-input"  name="wifi">Wi-Fi
+											<input type="checkbox" class="control-input"  name="wifi"><span>Wi-Fi</span>
 										</label>
 									</li>
 								</ul>
@@ -88,17 +88,17 @@
 								<ul class="catalog-filter-list">
 									<li class="catalog-filter-item">
 										<label class="control">
-											<input type="radio" class="control-input" checked name="type">Гостиница
+											<input type="radio" class="control-input" checked name="type"><span>Гостиница</span>
 										</label>
 									</li>
 									<li class="catalog-filter-item">
 										<label class="control">
-											<input type="radio" class="control-input" name="type">Мотель
+											<input type="radio" class="control-input" name="type"><span>Мотель</span>
 										</label>
 									</li>
 									<li class="catalog-filter-item">
 										<label class="control">
-											<input type="radio" class="control-input" name="type">Апартаменты
+											<input type="radio" class="control-input" name="type"><span>Апартаменты</span>
 										</label>
 									</li>
 								</ul>
@@ -115,6 +115,16 @@
 										<label for="price-to" class="control control-price">До</label>
 									<input id="price-to" type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter price-to" name="price_to" placeholder="9000" value="9000">
 								</div>
+									<div class="range-scale">
+										<div class="range-bar" style="left: 0; width: 226px">
+										  <button class="range-toggle toggle-min">
+											<span class="visually-hidden">Изменить минимальную цену</span>
+										  </button>
+										  <button class="range-toggle toggle-max">
+											<span class="visually-hidden">Изменить максимальную цену</span>
+										  </button>
+										</div>
+									</div>
 							</fieldset>
 							<div class="filter-control">
 								<button class="btn btn-second" type="submit">Применить</button>
