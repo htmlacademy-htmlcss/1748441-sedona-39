@@ -448,8 +448,8 @@ body{
 .about-item{
   list-style: none;
   padding-top: 80px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   padding-bottom: 100px;
   width: 400px;
   box-sizing: border-box;
@@ -595,6 +595,9 @@ body{
   padding-left: 30px;
   padding-right: 30px;
 }
+.subscribe-light{
+  padding-top: 73px;
+}
 
 .subscribe-light > .subscribe-title{
   color: #000000;
@@ -732,7 +735,7 @@ body{
 .breadcrumbs{
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -986,15 +989,15 @@ label.control{
 
 .catalog-filter{
   display: flex;
-  gap: 69px;
+  gap: 70px;
   flex-wrap: wrap;
 }
 
 .filter-control{
-  width: 180px;
+  width: 190px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
 }
 
 .filter-control .btn-second{
@@ -1015,6 +1018,7 @@ label.control{
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  align-self: center;
 }
 
 .product-list{
@@ -1029,7 +1033,7 @@ label.control{
   border-radius: 4px;
   padding-top: 9px;
   padding-bottom: 9px;
-  padding-left: 20px;
+  padding-left: 15px;
   margin-left: auto;
   cursor: pointer;
 }
@@ -1065,8 +1069,8 @@ label.control{
 
 .catalog-view-link{
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -1206,6 +1210,7 @@ label.control{
   margin-bottom: 16px;
   width: 100%;
   object-fit: contain;
+  vertical-align: middle;
 }
 
 .pagination{
@@ -1213,7 +1218,6 @@ label.control{
   gap: 8px;
   margin: 0;
   padding: 0;
-  margin-bottom: 60px;
 }
 
 .pagination-item{
