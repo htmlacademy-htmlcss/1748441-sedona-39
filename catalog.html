@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Гостиницы Седона</title>
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
 		<link rel="stylesheet" href="styles/styles.css">
 	</head>
 	<body>
@@ -39,7 +40,7 @@
 							</a>
 						</li>
 						<li class="navigation-item-user navigation-btn">
-							<a class="btn btn-basic" href="#">Хочу сюда!</a>
+							<a class="btn btn-basic" >Хочу сюда!</a>
 						</li>
 					</ul>
 				</nav>
@@ -111,8 +112,8 @@
 									<input id="price_from" type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter price-from" name="price_from" placeholder="0" value="0">
 								</div>
 								<div class="price-item">
-										<label for="price-to" class="control control-price">До</label>
-									<input id="price-to" type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter price-to" name="price_to" placeholder="9000" value="9000">
+									<label for="price-to" class="control control-price">До</label>
+									<input id="price-to" type="text" inputmode="numeric" pattern="\d*" class="control-input price-filter price-to"  name="price_to" placeholder="9000" value="9000">
 								</div>
                 <div class="range-scale">
                   <div class="range-bar" style="left: 0; width: 216px">
@@ -258,7 +259,7 @@
 					<p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
 					<form action="https://echo.htmlacademy.ru/" class="subscribe-form" method="post">
 						<label class="subscribe-form-email">
-							<input class="control-input subscribe-input" type="email" name="email" placeholder="Ваш e-mail">
+							<input class="control-input subscribe-input" type="email" name="email" placeholder="Ваш e-mail"  required>
 							<span class="visually-hidden">Ваш e-mail</span>
 						</label>
 						<button class="btn btn-second btn-big" type="submit">Подписаться</button>
@@ -267,27 +268,27 @@
 
 			</main>
 			<footer class="page-footer"  data-test="footer">
-				<h2 class="visually-hidden">Контакты и социальные сети</h2>
-				<ul class="social-list">
+        <h2 class="visually-hidden">Контакты и социальные сети</h2>
+        <ul class="social-list">
           <li class="social-item">
-            <a class="social-link social-item-vk" href="https://vk.com/htmlacademy">
+            <a class="social-link social-item-vk" target="_blank" rel="noreferrer noopener" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-item-tg" href="https://t.me/htmlacademy">
+            <a class="social-link social-item-tg" target="_blank" rel="noreferrer noopener" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Телеграмм</span>
             </a>
           </li>
           <li class="social-item">
-            <a class="social-link social-item-yt" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link social-item-yt" target="_blank" rel="noreferrer noopener" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
             </a>
           </li>
-				</ul>
-				<a class="phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
-				<a class="dev-company" href="https://htmlacademy.ru/" target="_blank"></a>
-			</footer>
+        </ul>
+        <a class="phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="dev-company" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"></a>
+      </footer>
 		</div>
 	</body>
 </html>
