@@ -655,6 +655,8 @@ body{
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 141px;
 }
 
 .social-item {
@@ -676,8 +678,11 @@ body{
   height: 25px;
   display: inline-block;
   vertical-align: middle;
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
+  -webkit-mask-image: var(--icon-social);
   mask-image: var(--icon-social);
   background-color: var(--bgc);
 }
@@ -732,6 +737,7 @@ body{
   width: 115px;
   height: 34px;
   display: block;
+  -webkit-mask-image: url(../images/academy-logo.svg);
   mask-image: url(../images/academy-logo.svg);
   background-color: #000000;
 }
@@ -789,6 +795,7 @@ body{
 
 .breadcrumbs-home-link:after{
   content: "";
+  -webkit-mask-image: url(../images/home-icon.svg);
   mask-image: url(../images/home-icon.svg);
   width: 12px;
   height: 12px;
@@ -803,6 +810,7 @@ body{
 
 .breadcrumbs-item:not(:first-child)::before{
   content: "";
+  -webkit-mask-image: url(../images/bread-line.svg);
   mask-image: url(../images/bread-line.svg);
   display: block;
   width: 7px;
@@ -920,6 +928,8 @@ body{
 }
 
 .control-input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   display: flex;
   align-items: center;
@@ -941,11 +951,14 @@ body{
   width: 70%;
   height: 70%;
   background: #3F5E72;
+  -webkit-mask: url(../images/check.svg) no-repeat center / contain;
   mask: url(../images/check.svg) no-repeat center / contain;
 }
 
 
 .control-input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   display: flex;
   align-items: center;
@@ -967,8 +980,11 @@ body{
   width: 50%;
   height: 50%;
   background: #3F5E72;
+  -webkit-mask-image: url(../images/point.svg);
   mask-image: url(../images/point.svg);
+  -webkit-mask-repeat:  no-repeat;
   mask-repeat:  no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
 }
 
@@ -1270,6 +1286,7 @@ label.control{
 .hotel-card-image{
   margin-bottom: 16px;
   width: 100%;
+  -o-object-fit: contain;
   object-fit: contain;
   vertical-align: middle;
 }
@@ -1337,8 +1354,6 @@ label.control{
   background-color: #FFFFFF;
   color: #000000;
 }
-/* Модальное окно */
-
 /* Модальное окно */
 
 .modal-container {
@@ -1472,7 +1487,9 @@ background-color: #68A2CA;
   width: 16px;
   height: 15px;
   display: block;
+  -webkit-mask-image: url(../images/calendar.svg);
   mask-image: url(../images/calendar.svg);
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   background: #767676;
   top: 15px;
@@ -1537,35 +1554,46 @@ background-color: #68A2CA;
   cursor: pointer;
 }
 .button-plus{
-  border-radius: 4px 0 0 4px;
+  border-radius: 0 4px 4px 0;
+
 }
 .button-minus{
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px 0 0 4px;
 }
 .button-plus:before{
   content: "";
+  -webkit-mask-image: url(../images/plus.svg);
   mask-image: url(../images/plus.svg);
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
-  background-color: #78645A;
+  background-color: rgba(117, 97, 87, 0.3);
   display: block;
   height: 100%;
   width: 100%;
 }
 .button-minus:before{
   content: "";
+  -webkit-mask-image: url(../images/minus.svg);
   mask-image: url(../images/minus.svg);
+  -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
+  -webkit-mask-position: center;
   mask-position: center;
-  background-color: #78645A;
+  background-color: rgba(117, 97, 87, 0.3);
   display: block;
   height: 100%;
   width: 100%;
 }
 
 .button-plus:hover::before,
-.button-minus:hover::before{
+.button-minus:hover::before,
+.button-counter:focus::before{
   background-color: #000000;
+}
+.button-counter:active::before{
+  background-color: #cccccc;
 }
 .button-counter:focus{
   /* outline: 3px solid #82B3D3; */
@@ -1579,7 +1607,7 @@ background-color: #68A2CA;
   height: 26px;
   background-color: #83B3D3;
   border-radius: 50%;
-
+  margin-right: 36px;
 }
 
 .tooltip-toggle {
