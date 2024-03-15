@@ -1141,11 +1141,16 @@ label.control{
   margin-left: auto;
   cursor: pointer;
   max-height: 48px;
+  appearance: none;
+  background-image: url("../images/caret.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
 
 .sort-product:disabled{
   border: 2px solid #0000004D;
   cursor: default;
+  opacity: .3;
 }
 
 .sort-product:not(:disabled):hover{
