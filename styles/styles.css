@@ -1512,11 +1512,15 @@ background-color: #68A2CA;
   opacity: .6;
   color: #000000;
 }
-.field-modal:hover{
+.field-modal:disabled{
+  background-color: #E6E6E6;
+  color: #A9A9A9;
+}
+.field-modal:not(:disabled):hover{
   color: #000000;
   background-color: #E6E6E6;
 }
-.field-modal:focus{
+.field-modal:not(:disabled):focus{
   color: #000000;
   background-color: #E6E6E6;
   /* outline: 3px solid #83B3D3; */
@@ -1553,6 +1557,11 @@ background-color: #68A2CA;
   color: #79655B;
   cursor: pointer;
 }
+.button-counter:disabled{
+  background-color: #E6E6E6;
+  color: #A9A9A9;
+  cursor: default;
+}
 .button-plus{
   border-radius: 0 4px 4px 0;
 
@@ -1587,12 +1596,12 @@ background-color: #68A2CA;
   width: 100%;
 }
 
-.button-plus:hover::before,
-.button-minus:hover::before,
-.button-counter:focus::before{
+.button-plus:not(:disabled):hover::before,
+.button-minus:not(:disabled):hover::before,
+.button-counter:not(:disabled):focus::before{
   background-color: #000000;
 }
-.button-counter:active::before{
+.button-counter:not(:disabled):active::before{
   background-color: #cccccc;
 }
 .button-counter:focus{
