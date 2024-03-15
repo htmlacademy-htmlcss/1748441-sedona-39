@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Ольга Васильева](https://up.htmlacademy.ru/htmlcss/39/user/1748441).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Ссылка на проект](https://genntanaka.github.io/1748441-sedona-39/)
 
 ---
 
