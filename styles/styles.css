@@ -548,7 +548,7 @@ body{
 
 .lead{
   text-align: center;
-  padding-top: 96px;
+  padding-top: 74px;
   padding-bottom: 96px;
 }
 
@@ -1331,7 +1331,7 @@ label.control{
 }
 
 .hotel-card-image{
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   width: 100%;
   -o-object-fit: contain;
   object-fit: contain;
