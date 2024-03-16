@@ -151,13 +151,15 @@
             </a>
           </li>
         </ul>
-        <a class="phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <div class="contacts">
+          <a class="phone-footer" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
         <a class="dev-company" href="https://htmlacademy.ru/" target="_blank" rel="noreferrer noopener"></a>
       </footer>
 
       <div id="myDialog" class="modal-container modal-close">
         <div class="modal">
-          <button class="modal-close-button">
+          <button type="button" class="modal-close-button">
               <span class="visually-hidden">Закрыть</span>
           </button>
           <section class="modal-content">
@@ -166,15 +168,15 @@
             <form class="find-form" action="https://echo.htmlacademy.ru/" method="post">
 
               <div class="wrapper-date">
-                <label class="find-form-label calendar-label" for="date_in">Дата заезда:</label>
+                <label class="find-form-label calendar-label" for="date_in">Дата Заезда:</label>
                 <p class="wrapper-field">
-                  <input class="date-form-field field-modal" type="text" id="date_in" name="date_in" value="27 апреля 2020" placeholder="Укажите дату">
+                  <input class="date-form-field field-modal" type="text" id="date_in" name="date_in" value="27 апреля 2020" placeholder="Укажите дату" required>
                   <span class="find-field-text error-field">Мы не можем отправить вас в прошлое.</span>
                 </p>
 
-                <label class="find-form-label calendar-label" for="date_out">Дата выезда:</label>
+                <label class="find-form-label calendar-label" for="date_out">Дата Выезда:</label>
                 <p class="wrapper-field">
-                  <input class="date-form-field field-modal" type="text" id="date_out" name="date_out" value="1 сентября 2023" placeholder="Укажите дату">
+                  <input class="date-form-field field-modal" type="text" id="date_out" name="date_out" value="1 сентября 2023" placeholder="Укажите дату" required>
                   <span class="find-field-text">На эти даты есть свободные номера. Пока есть.</span>
                 </p>
               </div>
@@ -186,7 +188,7 @@
                   <label class="find-form-label find-form-label-adult" for="adult">Взрослые:</label>
                   <div class="input-plus-minus-adult">
                     <button type="button" class="button-counter button-minus"><span class="visually-hidden">Увеличить количество взрослых</span></button>
-                    <input class="field-count field-modal" type="text" id="adult" name="adult" placeholder="2" value="2">
+                    <input class="field-count field-modal" type="text" id="adult" name="adult" placeholder="2" value="2" required>
                     <button type="button" class="button-counter button-plus"><span class="visually-hidden">Уменьшить количество взрослых</span></button>
                   </div>
                 </div>
