@@ -85,8 +85,8 @@ body{
 
 
 a.btn:not([href]), a.btn:not([href]):hover {
-  background-color: #E5E5E5;
-  color: #FFFFFF;
+  background-color: #e5e5e5;
+  color: #ffffff;
   pointer-events: none;
 }
 
